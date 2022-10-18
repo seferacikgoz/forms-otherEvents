@@ -13,6 +13,11 @@ const Form = () => {
     alert(`username: ${username},
           email: ${email},
           password: ${password}`)
+        
+    setUsername("");
+    setEmail("");
+    setPassword("");
+
   }
 
   const handleUsername = (e) => {
