@@ -18,6 +18,7 @@ const FormObject = () => {
           email:${email},
           password:${password}
     `);
+
     setFormValues({
       username: "",
       email: "",
