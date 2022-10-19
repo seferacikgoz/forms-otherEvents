@@ -7,10 +7,12 @@ const KeyboardClipboard = () => {
 console.log(inputValue)
   return <div className="container text-center">
     <h1>CLIPBOARD EVENTS</h1>
-    <input className="form-control" type="text" onChange={(e)=> setInputValue(e.target.value) 
+    <input className="form-control" type="text" onChange={(e)=> {
+      e.target.value = e.target.value.toLocaleUpperCase()
+      setInputValue(e.target.value)} 
       }/>
 
-    <p>{inputValue}</p>
+    <p className="text-start mt-4">{inputValue.toLocaleUpperCase()}</p>
 
   </div>
   
